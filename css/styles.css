@@ -818,7 +818,8 @@ address {
 
   border-radius: 4px;
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
+  padding: 40px;
 
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -839,8 +840,107 @@ address {
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin-right: 8px;
+  margin-top: 8px;
 }
 
 .icon-close {
   fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: var(--buttom-color-1);
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: var(--second-color);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 10px; */
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--third-color);
+}
+
+.form-group input {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  font-size: 16px;
+}
+
+.form-group textarea {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
+  resize: none;
+  outline: none;
+
+  font-style: 16px;
+}
+
+.form-group textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-check {
+  /* margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px; */
+  margin-bottom: 30px;
+}
+
+.pact {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--buttom-color-1);
+}
+
+.modal-btn {
+  display: block;
+  background-color: var(--buttom-color-1);
+  color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 40px; */
+  padding: 0;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:is(:hover, :focus) {
+  background: var(--buttom-color-2);
 }
