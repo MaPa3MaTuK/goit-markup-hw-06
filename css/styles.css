@@ -713,6 +713,7 @@ address {
   padding: 15px;
   outline: none;
   color: var(--buttom-color-3);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sub-input:focus {
@@ -742,7 +743,7 @@ address {
 }
 
 .sub-btn:is(:hover, :focus) {
-  background: var(--buttom-color-2);
+  background-color: var(--buttom-color-2);
 }
 
 /**
@@ -919,9 +920,6 @@ address {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* margin-right: 40px;
-  margin-left: 40px;
-  margin-top: 10px; */
   margin-bottom: 10px;
 }
 
@@ -988,7 +986,7 @@ address {
 }
 
 .modal-btn:is(:hover, :focus) {
-  background: var(--buttom-color-2);
+  background-color: var(--buttom-color-2);
 }
 
 /* .icon-modal {
@@ -1011,7 +1009,8 @@ textarea:focus {
   border: 1px solid #2196f3;
 }
 
-input:hover {
+input:hover,
+textarea:hover {
   cursor: pointer;
 }
 
