@@ -630,8 +630,7 @@ address {
 }
 
 .footer-contacts {
-  margin-right: 70px;
-  padding-right: 24px;
+  margin-right: 94px;
 }
 
 .promotion {
@@ -1054,7 +1053,7 @@ input:focus + .icon-input {
 .label-check {
   color: var(--third-color);
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 5px;
 }
 
